@@ -1,4 +1,4 @@
-en:
+es-mx:
   faker:
     address:
       city_prefix: [North, East, West, South, New, Lake, Port]
@@ -21,7 +21,7 @@ en:
         - "#{Name.last_name} #{street_suffix}"
       street_address:
         - "#{building_number} #{street_name}"
-      default_country: [United States of America]
+      default_country: [México]
 
     company:
       suffix: [Inc, and Sons, LLC, Group]
@@ -58,12 +58,13 @@ en:
         level: [Solutions, Program, Brand, Security, Research, Marketing, Directives, Implementation, Integration, Functionality, Response, Paradigm, Tactics, Identity, Markets, Group, Division, Applications, Optimization, Operations, Infrastructure, Intranet, Communications, Web, Branding, Quality, Assurance, Mobility, Accounts, Data, Creative, Configuration, Accountability, Interactions, Factors, Usability, Metrics]
         job: [Supervisor, Associate, Executive, Liason, Officer, Manager, Engineer, Specialist, Director, Coordinator, Administrator, Architect, Analyst, Designer, Planner, Orchestrator, Technician, Developer, Producer, Consultant, Assistant, Facilitator, Agent, Representative, Strategist]
       name:
+        - "#{prefix} #{first_name} #{last_name} #{last_name}"
         - "#{prefix} #{first_name} #{last_name}"
-        - "#{first_name} #{last_name} #{suffix}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name} #{suffix}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
 
     phone_number:
       formats: ['###-###-####', '(###)###-####', '1-###-###-####', '###.###.####', '###-###-####', '(###)###-####', '1-###-###-####', '###.###.####', '###-###-#### x###', '(###)###-#### x###', '1-###-###-#### x###', '###.###.#### x###', '###-###-#### x####', '(###)###-#### x####', '1-###-###-#### x####', '###.###.#### x####', '###-###-#### x#####', '(###)###-#### x#####', '1-###-###-#### x#####', '###.###.#### x#####']
