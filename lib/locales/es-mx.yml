@@ -12,15 +12,15 @@ es-mx:
       state: [Aguascalientes, Baja California, Baja California Sur, Campeche, Chiapas, Chihuahua, Coahuila, Colima, Distrito Federal, Durango, Guanajuato, Guerrero, Hidalgo, Jalisco, Estado de México, Michoacán, Morelos, Nayarit, Nuevo León, Oaxaca, Puebla, Querétaro, Quintana Roo, San Luis Potosí, Sinaloa, Sonora, Tabasco, Tamaulipas, Tlaxcala, Veracruz, Yucatán, Zacatecas ]
       state_abbr: [AG, BC, BS, CM, CS, CH, CO, CL, DF, DG, GT, GR, HG, JA, ME, MI, MO,NA, NL, OA, PB, QE, QR, SL, SI, SO, TB, TM, TL, VE, YU, ZA]
       city:
-        - "#{city_prefix} #{Name.first_name}#{city_suffix}"
+        - "#{city_prefix} #{Name.first_name} #{city_suffix}"
         - "#{city_prefix} #{Name.first_name}"
-        - "#{Name.first_name}#{city_suffix}"
-        - "#{Name.last_name}#{city_suffix}"
+        - "#{Name.first_name} #{city_suffix}"
+        - "#{Name.last_name} #{city_suffix}"
       street_name:
-        - "#{Name.first_name} #{street_suffix}"
-        - "#{Name.last_name} #{street_suffix}"
+        - "#{street_suffix} #{Name.first_name}"
+        - "#{street_suffix} #{Name.last_name}"
       street_address:
-        - "#{building_number} #{street_name}"
+        - "#{street_name} #{building_number}"
       default_country: [México]
 
     company:
