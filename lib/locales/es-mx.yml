@@ -1,24 +1,31 @@
 es-mx:
   faker:
     address:
-      city_prefix: [North, East, West, South, New, Lake, Port]
-      city_suffix: [town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire]
+      city_prefix: [Villa, Ciudad, Villa Heróica]
+      city_suffix: [ 'Juárez', 'Madero', 'Porfirio Díaz', 'Zapata', 'Magón']
       country: [Afganistán, Albania, Alemania, Andorra, Angola, Antigua, Antillas, Arabia, Argelia, Argentina, Armenia, Aruba, Australia, Austria, Azerbaiyán, Bahamas, Bahrein, Bangladesh, Barbados, Bélgica, Belice, Benín, Bermudas, Bielorrusia, Bolivia, Bosnia, Botswana, Brasil, Brunei, Bulgaria, Burkina, Burundi, Bután, Cabo, Camboya, Camerún, Canadá, Catar, Chad, Chile, China, Chipre, Colombia, Comoras, Congo, Corea, Corea, Costa, Costa, Croacia, Cuba, Dinamarca, Dominica, Dubai, Ecuador, Egipto, El, Emiratos, Eritrea, Eslovaquia, Eslovenia, España, Estados, Estonia, Etiopía, Filipinas, Finlandia, Fiyi, Francia, Gabón, Gambia, Georgia, Ghana, Granada, Grecia, Guam, Guatemala, Guayana, Guinea, Guinea, Guinea, Guyana, Haití, Holanda, Honduras, Hong, Hungría, India, Indonesia, Irak, Irán, Irlanda, Islandia, Islas, Islas, Islas, Islas, Israel, Italia, Jamaica, Japón, Jordania, Kazajstán, Kenia, Kirguistán, Kiribati, Kósovo, Kuwait, Laos, Lesotho, Letonia, Líbano, Liberia, Libia, Liechtenstein, Lituania, Luxemburgo, Macedonia, Madagascar, Malasia, Malawi, Maldivas, Malí, Malta, Marianas, Marruecos, Mauricio, Mauritania, México, Micronesia, Moldavia, Mónaco, Mongolia, Montenegro, Mozambique, Myanmar, Namibia, Nauru, Nepal, Nicaragua, Níger, Nigeria, Noruega, Nueva, Omán, Orden, Países, Pakistán, Palau, Palestina, Panamá, Papúa, Paraguay, Perú, Polonia, Portugal, Puerto, Reino, República, República, República, República, República, Ruanda, Rumania, Rusia, Sáhara, Saint, Samoa, Samoa, San, San, Santa, Santo, Senegal, Serbia, Seychelles, Sierra, Singapur, Siria, Somalia, Sri, Suazilandia, Sudáfrica, Sudán, Suecia, Suiza, Tailandia, Taiwán, Tanzania, Tayikistán, Tíbet, Timor, Togo, Tonga, Trinidad, Túnez, Turkmenistán, Turquía, Tuvalu, Ucrania, Uganda, Uruguay, Uzbequistán, Vanuatu, Vaticano, Venezuela, Vietnam, Wallis, Yemen, Yibuti, Zaire, Zambia, Zimbabue]
-      building_number: ['#####', '####', '###']
-      street_suffix: [Alley, Avenue, Branch, Bridge, Brook, Brooks, Burg, Burgs, Bypass, Camp, Canyon, Cape, Causeway, Center, Centers, Circle, Circles, Cliff, Cliffs, Club, Common, Corner, Corners, Course, Court, Courts, Cove, Coves, Creek, Crescent, Crest, Crossing, Crossroad, Curve, Dale, Dam, Divide, Drive, Drive, Drives, Estate, Estates, Expressway, Extension, Extensions, Fall, Falls, Ferry, Field, Fields, Flat, Flats, Ford, Fords, Forest, Forge, Forges, Fork, Forks, Fort, Freeway, Garden, Gardens, Gateway, Glen, Glens, Green, Greens, Grove, Groves, Harbor, Harbors, Haven, Heights, Highway, Hill, Hills, Hollow, Inlet, Inlet, Island, Island, Islands, Islands, Isle, Isle, Junction, Junctions, Key, Keys, Knoll, Knolls, Lake, Lakes, Land, Landing, Lane, Light, Lights, Loaf, Lock, Locks, Locks, Lodge, Lodge, Loop, Mall, Manor, Manors, Meadow, Meadows, Mews, Mill, Mills, Mission, Mission, Motorway, Mount, Mountain, Mountain, Mountains, Mountains, Neck, Orchard, Oval, Overpass, Park, Parks, Parkway, Parkways, Pass, Passage, Path, Pike, Pine, Pines, Place, Plain, Plains, Plains, Plaza, Plaza, Point, Points, Port, Port, Ports, Ports, Prairie, Prairie, Radial, Ramp, Ranch, Rapid, Rapids, Rest, Ridge, Ridges, River, Road, Road, Roads, Roads, Route, Row, Rue, Run, Shoal, Shoals, Shore, Shores, Skyway, Spring, Springs, Springs, Spur, Spurs, Square, Square, Squares, Squares, Station, Station, Stravenue, Stravenue, Stream, Stream, Street, Street, Streets, Summit, Summit, Terrace, Throughway, Trace, Track, Trafficway, Trail, Trail, Tunnel, Tunnel, Turnpike, Turnpike, Underpass, Union, Unions, Valley, Valleys, Via, Viaduct, View, Views, Village, Village, Villages, Ville, Vista, Vista, Walk, Walks, Wall, Way, Ways, Well, Wells]
+      building_number: ['##', '###', '1###']
+      street_preffix: [Avenida, Boulevard, Andador]
       secondary_address: ['Apt. ###', 'Suite ###']
       # Though these are US-specific, they are here (in the default locale) for backwards compatibility
       postcode: ['#####', '#####-####']
       state: [Aguascalientes, Baja California, Baja California Sur, Campeche, Chiapas, Chihuahua, Coahuila, Colima, Distrito Federal, Durango, Guanajuato, Guerrero, Hidalgo, Jalisco, Estado de México, Michoacán, Morelos, Nayarit, Nuevo León, Oaxaca, Puebla, Querétaro, Quintana Roo, San Luis Potosí, Sinaloa, Sonora, Tabasco, Tamaulipas, Tlaxcala, Veracruz, Yucatán, Zacatecas ]
       state_abbr: [AG, BC, BS, CM, CS, CH, CO, CL, DF, DG, GT, GR, HG, JA, ME, MI, MO,NA, NL, OA, PB, QE, QR, SL, SI, SO, TB, TM, TL, VE, YU, ZA]
       city:
-        - "#{city_prefix} #{Name.first_name} #{city_suffix}"
-        - "#{city_prefix} #{Name.first_name}"
-        - "#{Name.first_name} #{city_suffix}"
+        - "#{city_prefix} #{Name.last_name} de #{city_suffix}"
+        - "#{city_prefix} #{Name.last_name}"
+        - "#{Name.last_name} de #{city_suffix}"
         - "#{Name.last_name} #{city_suffix}"
+        - "#{Name.last_name} #{city_suffix}"
+
       street_name:
-        - "#{street_suffix} #{Name.first_name}"
-        - "#{street_suffix} #{Name.last_name}"
+        - "#{Name.last_name}"
+        - "#{Name.last_name}"
+        - "#{city_suffix}"
+        - "#{city_suffix}"
+        - "#{street_preffix} #{Name.last_name}"
+        - "#{street_preffix} #{city_suffix}"
+        - "#{street_preffix} #{Name.last_name}"
       street_address:
         - "#{street_name} #{building_number}"
       default_country: [México]
@@ -65,4 +72,9 @@ es-mx:
         - "#{first_name} #{last_name} #{last_name}"
 
     phone_number:
-      formats: ['###-###-####', '(###)###-####', '1-###-###-####', '###.###.####', '###-###-####', '(###)###-####', '1-###-###-####', '###.###.####', '###-###-#### x###', '(###)###-#### x###', '1-###-###-#### x###', '###.###.#### x###', '###-###-#### x####', '(###)###-#### x####', '1-###-###-#### x####', '###.###.#### x####', '###-###-#### x#####', '(###)###-#### x#####', '1-###-###-#### x#####', '###.###.#### x#####']
+      formats: ['###-###-####', '(###)###-####', '+52-###-###-####', '###-###-####', '(###)###-####', '+52-###-###-####', '###.###.####', '###-###-#### ext. ###', '(###)###-#### ext. ###', '+52-###-###-#### ext. ###', '###.###.#### ext. ###', '###-###-#### ext. ####', '(###)###-#### ext. ####', '+52-###-###-#### ext. ####', '###.###.#### ext. ####', '###-###-#### ext. #####', '(###)###-#### ext. #####', '+52-###-###-#### ext. #####']
+    sat:
+      rfc_fisica: 
+        - "????########?"
+      rfc_moral: 
+        - "???########?"
