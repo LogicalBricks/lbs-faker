@@ -88,8 +88,6 @@ es-mx:
       town: ['Santo Domingo Tianguistengo', 'Reyes Etla', 'San Antonio Cuajimoloyas', 'Teotitlán del Valle', 'Oaxaca', 'Santiago Matatlán', 'San Agustín Yatareni' ]
       
       name: 
-        - "#{event_male}"
-        - "#{event_female}"
         - "#{number_male} #{event_male} #{subject}"
         - "#{number_female} #{event_female} #{subject}"
         - "#{number} #{event_female} #{subject}"
