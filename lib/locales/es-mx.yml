@@ -78,7 +78,7 @@ es-mx:
         - "????########?"
       rfc_moral: 
         - "???########?"
-    events:
+    event:
       number_male: ['1er.', '2o.', '3er.', '4o.', '5o.']
       number_female: ['1era.', '2a.', '3a.', '4a.', '5a.']
       number: ['X', 'XI', 'XII', 'XV','XIII', 'XIV']
