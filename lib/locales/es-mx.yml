@@ -96,3 +96,12 @@ es-mx:
         - "#{number} #{event_male} #{subject}"
         - "#{number} #{event_female} #{subject} de #{town}"
         - "#{number} #{event_male} #{subject} de #{town}"
+    place:
+      preffix_male: [ 'San' ]
+      preffix_female: [ 'Santa' ]
+      place_male: [ 'Agustin', 'Mateo', 'Bartolo', 'Juan', 'Miguel', 'Lorenzo', 'Domingo', 'Andres', 'Filomeno', 'Andrés', 'Pablo', 'Pedro', 'Francisco', 'Lucas', 'Martín', 'Luis', 'Sebastian', 'Raymundo', 'Simón', 'Vicente' ]
+      place_female: [ 'Maria', 'Lucía', 'Ana', 'Catarina', 'Catalina', 'Cruz', 'Gertrudis', 'Inés', 'Magdalena' ]
+      suffix: [ 'Choámpam', 'Coixtlahuacan', 'Cuicatlán', 'Ejutla', 'Etla', 'Huajuapan', 'Jamiltepec', 'Juchitán', 'Juquila', 'Juxtlahuacan', 'Miahuatlán', 'Mixe', 'Nochixtlán', 'Ocotlán', 'Pochutla', 'Putla', 'Silacayoápam', 'Sola de Vega', 'Tehuantepec', 'Teotitlán', 'Teposcolula', 'Tlacolula', 'Tlaxiaco', 'Tuxtepec', 'Villa Alta', 'Yautepec', 'Zaachila', 'Zimatlán', 'el alto', 'el chico', 'del valle', 'Tlalixtac', 'Tonameca', 'Yosoyúa', 'Yalina', 'Yucuhiti', 'Zacatepec', 'Zoquitlán', 'Zaniza' ]
+      name:
+        - "#{preffix_male} #{place_male} #{suffix}"
+        - "#{preffix_female} #{place_female} #{suffix}"

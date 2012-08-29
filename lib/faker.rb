@@ -145,12 +145,13 @@ end
 
 require 'faker/address'
 require 'faker/company'
+require 'faker/event'
 require 'faker/internet'
 require 'faker/lorem'
 require 'faker/name'
 require 'faker/phone_number'
+require 'faker/place'
 require 'faker/sat'
-require 'faker/event'
 require 'faker/version'
 
 require 'extensions/array'
