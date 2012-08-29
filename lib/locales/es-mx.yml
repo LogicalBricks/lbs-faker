@@ -78,3 +78,21 @@ es-mx:
         - "????########?"
       rfc_moral: 
         - "???########?"
+    events:
+      number_male: ['1er.', '2o.', '3er.', '4o.', '5o.']
+      number_female: ['1era.', '2a.', '3a.', '4a.', '5a.']
+      number: ['X', 'XI', 'XII', 'XV','XIII', 'XIV']
+      event_female: ['Feria', 'Festival', 'Feria Regional', 'Expo Feria'] 
+      event_male: ['Congreso', 'Foro', 'Concurso']
+      subject: ['Artesanal', 'Anual', 'Musical', 'Cultural']
+      town: ['Santo Domingo Tianguistengo', 'Reyes Etla', 'San Antonio Cuajimoloyas', 'Teotitlán del Valle', 'Oaxaca', 'Santiago Matatlán', 'San Agustín Yatareni' ]
+      
+      name: 
+        - "#{event_male}"
+        - "#{event_female}"
+        - "#{number_male} #{event_male} #{subject}"
+        - "#{number_female} #{event_female} #{subject}"
+        - "#{number} #{event_female} #{subject}"
+        - "#{number} #{event_male} #{subject}"
+        - "#{number} #{event_female} #{subject} de #{town}"
+        - "#{number} #{event_male} #{subject} de #{town}"
